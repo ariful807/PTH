@@ -1,0 +1,51 @@
+@media (max-width: 992px) {
+    .slider-slide { height: 380px; }
+    .slider-slide h2 { font-size: 2rem; }
+    .slider-slide p { font-size: 1rem; }
+}
+
+@media (max-width: 768px) {
+    #hamburger { display: block; }
+    #mainNav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        padding: 16px 20px;
+    }
+    #mainNav.active { display: block; }
+    #mainNav ul { flex-direction: column; gap: 8px; }
+    #mainNav ul li { width: 100%; }
+    #mainNav ul li a { display: block; padding: 10px 12px; text-align: center; }
+    .btn-login { display: block; text-align: center !important; }
+    .slider-slide { height: 280px; padding: 20px; }
+    .slider-slide h2 { font-size: 1.5rem; }
+    .slider-slide p { font-size: 0.9rem; }
+    .slider-btn { font-size: 1.8rem; padding: 8px 14px; }
+    .slider-btn.prev { left: 4px; }
+    .slider-btn.next { right: 4px; }
+    .classes-grid, .courses-grid, .articles-grid, .teachers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-container { grid-template-columns: 1fr; text-align: center; }
+    .social-icons { justify-content: center; }
+    .section { padding: 36px 0; }
+    .section h2 { font-size: 1.5rem; }
+    .logo-wrapper span { font-size: 1.1rem; }
+    .course-request-form { padding: 16px; }
+}
+
+@media (max-width: 480px) {
+    .classes-grid, .courses-grid, .articles-grid, .teachers-grid {
+        grid-template-columns: 1fr;
+    }
+    .slider-slide { height: 220px; }
+    .slider-slide h2 { font-size: 1.2rem; }
+    .slider-slide p { font-size: 0.8rem; }
+    .slider-btn { font-size: 1.4rem; padding: 6px 10px; }
+    .logo-wrapper img { height: 36px; }
+    .logo-wrapper span { font-size: 0.95rem; }
+}

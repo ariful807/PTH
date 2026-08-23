@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>অ্যাডমিন প্যানেল</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+</head>
+<body>
+    <div id="adminApp">
+        <div id="adminLogin" class="admin-login">
+            <div class="login-box">
+                <h2>অ্যাডমিন লগইন</h2>
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <label for="adminUser">ইউজারনেম</label>
+                        <input type="text" id="adminUser" value="admin" />
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPass">পাসওয়ার্ড</label>
+                        <input type="password" id="adminPass" value="180665" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">লগইন</button>
+                    <div id="adminLoginMsg" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+
+        <div id="adminDashboard" style="display:none;">
+            <header class="admin-header">
+                <h1>অ্যাডমিন প্যানেল</h1>
+                <button id="adminLogoutBtn" class="btn btn-secondary">লগআউট</button>
+            </header>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="#" data-section="dashboard">ড্যাশবোর্ড</a></li>
+                    <li><a href="#" data-section="students">ছাত্র</a></li>
+                    <li><a href="#" data-section="courses">কোর্স</a></li>
+                    <li><a href="#" data-section="access">অ্যাক্সেস</a></li>
+                    <li><a href="#" data-section="lessons">লেসন</a></li>
+                    <li><a href="#" data-section="notices">নোটিস</a></li>
+                    <li><a href="#" data-section="articles">আর্টিকেল</a></li>
+                    <li><a href="#" data-section="gallery">গ্যালারি</a></li>
+                    <li><a href="#" data-section="teachers">শিক্ষক</a></li>
+                    <li><a href="#" data-section="requests">রিকোয়েস্ট</a></li>
+                    <li><a href="#" data-section="settings">সেটিংস</a></li>
+                    <li><a href="#" data-section="logs">লগ</a></li>
+                    <li><a href="#" data-section="change-password">পাসওয়ার্ড পরিবর্তন</a></li>
+                </ul>
+            </nav>
+            <main id="adminContent" class="admin-content"><p>লোড হচ্ছে...</p></main>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
